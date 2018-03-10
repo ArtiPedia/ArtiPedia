@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gemspec :name => "jekyll"
+gemspec
 
 gem "rake", "~> 12.0"
 
