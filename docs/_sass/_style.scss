@@ -361,7 +361,8 @@ display: block;
 .free-hosting {
 
   .pane {
-    background-color: #3e3e3e;
+    background-color: #38a3e1;
+   color:#fff;
     @include border-radius(10px);
     text-shadow: none;
     position: relative;
@@ -378,6 +379,7 @@ display: block;
 
   p,
   a { font-size: 16px; }
+ a { color: #d0edff; }
 
   p { margin: .75em 0; }
 }
