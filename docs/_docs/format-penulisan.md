@@ -6,12 +6,20 @@ permalink: /docs/format-penulisan/
 ## Header
 Penulisan sub judul 
 ```
-# This is an <h1> tag
-## This is an <h2> tag
+# Judul <h1> tag
+## Sub Judul <h2> tag
+### Sub Judul <h3> tag
+#### Sub Judul <h4> tag
+##### Sub Judul <h5> tag
 ###### This is an <h6> tag
 ```
 Hasilnya
-> # Sub Judul h1 ## Sub Judul h2 ### Sub Judul h3 #### Sub Judul h4 ##### Sub Judul h5 ###### Sub Judul h6
+> # Judul h1 
+## Sub Judul h2 
+### Sub Judul h3 
+#### Sub Judul h4 
+##### Sub Judul h5 
+###### Sub Judul h6
 
 ## Bold
 Menebalkan huruf terdapat dua cara
