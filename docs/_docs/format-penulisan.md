@@ -50,6 +50,14 @@ Untuk menambahkan <code>blockquote</code> tambahkan <code>></code> sebelum/pada 
 Hasilnya
 > Tes penulisan blockquote
 
+{% raw %}
+```liquid
+{{ site.baseurl }}{% link _collection/name-of-document.md %}
+{{ site.baseurl }}{% link _posts/2016-07-26-name-of-post.md %}
+{{ site.baseurl }}{% link news/index.html %}
+{{ site.baseurl }}{% link /assets/files/doc.pdf %}
+```
+{% endraw %}
 
 
  
