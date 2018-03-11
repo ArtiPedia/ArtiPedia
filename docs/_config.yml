@@ -1,12 +1,12 @@
 ---
 version: 0.1
-name: Jekyll • Simple, blog-aware, static sites
+name: ArtiPedia • Pengertian, Definisi, dan Istilah
 description: ArtiPedia Informasi Definisi, Pengertian, Istilah, Referensi
 url: http://artipedia.site/
 repository: https://github.com/artipedia/artipedia
 timezone: America/Los_Angeles
 twitter:
-  username: jekyllrb
+  username: artipedia
 logo: "/img/logo-2x.png"
 google_analytics_id: 
 google_site_verification: 
@@ -46,3 +46,6 @@ exclude:
 - CNAME
 - icomoon-selection.json
 - readme.md
+algolia:
+  application_id: 'E2EESK22EJ'
+  index_name:     'artipedia'
