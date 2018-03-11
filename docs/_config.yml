@@ -9,7 +9,7 @@ twitter:
   username: artipedia
 logo: "/img/logo-2x.png"
 google_analytics_id: 
-google_site_verification: google-site-verification" content="C1hGxjtzZwOcieGwAnCwFYFX2eSEVxz_JWWiytICEEc
+google_site_verification: C1hGxjtzZwOcieGwAnCwFYFX2eSEVxz_JWWiytICEEc
 collections:
   docs:
     permalink: "/:collection/:path/"
