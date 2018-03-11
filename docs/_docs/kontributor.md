@@ -1,6 +1,6 @@
 ---
 title: Panduan
-permalink: /docs/panduan/
+permalink: /docs/kontributor/
 ---
 
 Menjadi Kontributor!
