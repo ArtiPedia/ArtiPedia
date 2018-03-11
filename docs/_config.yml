@@ -15,7 +15,7 @@ collections:
     permalink: "/:collection/:path/"
     output: true
   posts:
-    permalink: "/news/:year/:month/:day/:title/"
+    permalink: "/news/categories/:title/"
     output: true
   tutorials:
     output: true
