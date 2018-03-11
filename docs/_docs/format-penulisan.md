@@ -5,6 +5,7 @@ permalink: /docs/format-penulisan/
 
 ## Header
 Penulisan sub judul 
+{% raw %}
 ```liquid
 # Judul <h1> tag
 ## Sub Judul <h2> tag
@@ -13,6 +14,8 @@ Penulisan sub judul
 ##### Sub Judul <h5> tag
 ###### This is an <h6> tag
 ```
+{% endraw %}
+
 Hasilnya
 # Judul h1 
 ## Sub Judul h2 
