@@ -14,7 +14,7 @@ Penulisan sub judul
 ###### This is an <h6> tag
 ```
 Hasilnya
-> # Judul h1 
+# Judul h1 
 ## Sub Judul h2 
 ### Sub Judul h3 
 #### Sub Judul h4 
@@ -28,13 +28,16 @@ Menebalkan huruf terdapat dua cara
 2. __Contoh__.
 ```
 Hasilnya
-> **Contoh**
+**Contoh**
 
 ## Italic
 ```
-*Contoh*
-_Contoh_.
+1. *Contoh*
+2. _Contoh_.
 ```
+Hasilnya
+*Contoh*
+
 ## Blockquote
 Untuk menambahkan <code>blockquote</code> tambahkan <code>></code> sebelum/pada awal paragraf
 ```
@@ -42,6 +45,7 @@ Untuk menambahkan <code>blockquote</code> tambahkan <code>></code> sebelum/pada 
 ```
 Hasilnya
 > Tes penulisan blockquote
+
 
 
  
