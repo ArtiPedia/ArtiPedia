@@ -5,7 +5,7 @@ permalink: /docs/format-penulisan/
 
 ## Header
 Penulisan sub judul 
-```
+```liquid
 # Judul <h1> tag
 ## Sub Judul <h2> tag
 ### Sub Judul <h3> tag
