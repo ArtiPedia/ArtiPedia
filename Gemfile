@@ -7,6 +7,7 @@ gem "rouge", ENV["ROUGE"] if ENV["ROUGE"]
 
 group :jekyll_plugins do
   gem 'jekyll-algolia'
+  gem "algoliasearch-rails"
 end
 
 # Dependency of jekyll-mentions. RubyGems in Ruby 2.1 doesn't shield us from this.
