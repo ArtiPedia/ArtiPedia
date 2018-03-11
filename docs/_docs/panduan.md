@@ -1,12 +1,9 @@
 ---
-layout: news_item
-title: "Meet Jekyll's New Lead Developer"
-date: "2018-02-19 20:48:09 -0500"
-author: parkr
-categories: [team]
+title: Panduan
+permalink: /docs/panduan/
 ---
 
-Jekyll has a new Lead Developer: [Olivia](https://liv.cat/)!
+Menjadi Kontributor!
 
 After over 5 years of leading Jekyll, many releases from 0.12.1 to 3.6.0, and
 countless conversations in GitHub Issues, Pull Requests, Jekyll Talk, and
