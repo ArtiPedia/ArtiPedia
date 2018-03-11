@@ -1,9 +1,9 @@
 ---
-title: Tes
-permalink: /docs/assets/
+title: Panduan
+permalink: /docs/usage/
 ---
 
-Jekyll has a new Lead Developer: [Olivia](https://liv.cat/)!
+Menjadi Kontributor!
 
 After over 5 years of leading Jekyll, many releases from 0.12.1 to 3.6.0, and
 countless conversations in GitHub Issues, Pull Requests, Jekyll Talk, and
