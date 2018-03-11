@@ -1,5 +1,5 @@
 ---
-title: Panduan
+title: Menjadi Kontributor
 permalink: /docs/kontributor/
 ---
 
