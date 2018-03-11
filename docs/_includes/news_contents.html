@@ -4,13 +4,25 @@
       <li class="{% if page.title == 'News' %}current{% endif %}">
         <a href="/news/">All News</a>
       </li>
-      <li class="{% if page.title == 'Releases' %}current{% endif %}">
-        <a href="/news/releases/">Jekyll Releases</a>
-      </li>
-    </ul>
-    <h4>Recent Releases</h4>
+     </ul>
+    <h4>Kategori</h4>
     <ul>
-      {% for post in site.categories.release limit:5 %}
+      {% for post in site.categories.referensi limit:5 %}
+      <li class="{% if page.title == post.title %}current{% endif %}">
+        <a href="{{ post.url }}">Version {{ post.version }}</a>
+      </li>
+      {% endfor %}
+	  {% for post in site.categories.berita limit:5 %}
+      <li class="{% if page.title == post.title %}current{% endif %}">
+        <a href="{{ post.url }}">Version {{ post.version }}</a>
+      </li>
+      {% endfor %}
+	  {% for post in site.categories.administrasi limit:5 %}
+      <li class="{% if page.title == post.title %}current{% endif %}">
+        <a href="{{ post.url }}">Version {{ post.version }}</a>
+      </li>
+      {% endfor %}
+	  {% for post in site.categories.buku limit:5 %}
       <li class="{% if page.title == post.title %}current{% endif %}">
         <a href="{{ post.url }}">Version {{ post.version }}</a>
       </li>
