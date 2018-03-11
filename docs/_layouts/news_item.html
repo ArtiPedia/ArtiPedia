@@ -3,6 +3,7 @@ layout: news
 ---
 
 <article>
+  
   <h2>
     {{ page.title }}
     <a href="{{ page.url }}" class="header-link" title="Permalink">
@@ -10,6 +11,9 @@ layout: news
       <i class="fa fa-link"></i>
     </a>
   </h2>
+  <div class="improve right hide-on-mobiles">
+            <a href="https://github.com/artipedia/artipedia/edit/master/docs/{{ page.path }}"><i class="fa fa-pencil"></i> &nbsp;Edit/Optimalkan halaman ini</a>
+          </div>
   <span class="post-category">
     <span class="label">
       {{ page.categories | array_to_sentence_string }}
