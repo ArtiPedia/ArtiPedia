@@ -21,6 +21,11 @@ _Contoh_.
 ```
 ## Blockquote
 Untuk menambahkan <code>blockquote</code> tambahkan <code>></code> sebelum/pada awal paragraf
+```
+> Tes penulisan blockquote
+```
+Hasilnya
+> Tes penulisan blockquote
 
 
  
