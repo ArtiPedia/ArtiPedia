@@ -9,7 +9,7 @@ Hai semua, Tertarik untuk berkontribusi pada ArtiPedia? Kami membutuhkan bantuan
 
 Entah Anda seorang mahasiswa, perancang, atau siapa saja, anda bisa berkontribusi, karena ArtiPedia terbuka untuk umum. 
 
-1. Mengirim Artikel.
+1. Anda dapat berkontribusi dengan menulis dan mengirimkan Artikel.
 2. Baca dokumentasi , dan klik tombol "perbaiki halaman ini", kapan pun Anda melihat sesuatu yang membingungkan, atau minta saran untuk sesuatu yang bisa diperbaiki.
 3. Jelajahilah forum diskusi ArtiPedia , dan ajukan pertanyaan atau menjawab pertanyaan.
 5. Temukan masalah terbuka (terutama yang diberi labelhelp-wanted ), dan kirimkan perbaikan yang diajukan. 
