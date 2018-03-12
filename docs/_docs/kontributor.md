@@ -5,36 +5,26 @@ permalink: /docs/kontributor/
 
 Menjadi Kontributor!
 
-After over 5 years of leading Jekyll, many releases from 0.12.1 to 3.6.0, and
-countless conversations in GitHub Issues, Pull Requests, Jekyll Talk, and
-more, I am passing on the torch as Lead Developer of Jekyll.
+Hai semua, Tertarik untuk berkontribusi pada ArtiPedia? Kami membutuhkan bantuan anda. ArtiPedia adalah proyek open source, membangun satu kontribusi sekaligus oleh pengguna seperti Anda.
 
-Olivia has been working with the Jekyll community for some time now. You
-may have seen her around in issues and pull requests on the various Jekyll
-repositories. She started as a contributor, then joined the Core team as our
-community lead. Olivia joined the Jekyll Core Team with experience in the
-Node.js community, both online and as a volunteer organizer with JSConf EU.
+Entah Anda seorang mahasiswa, perancang, atau siapa saja, anda bisa berkontribusi, karena ArtiPedia terbuka untuk umum. 
 
-In my conversations with Olivia, it is clear that Jekyll's vision of
-simplicity for the user ([no magic!](/philosophy#1-no-magic)) and letting
-users' [content be king](/philosophy#3-content-is-king) will remain a top
-priority. In just the last few weeks as the transition has been occurring,
-we have seen some incredible work on performance that will make future
-versions of Jekyll work better at scale. She will be prioritizing work on
-innovative improvements to make Jekyll that much better for all of us.
-Olivia balances an eye for quality with the need for shipping well.
+1. Mengirim Artikel.
+2. Baca dokumentasi , dan klik tombol "perbaiki halaman ini", kapan pun Anda melihat sesuatu yang membingungkan, atau minta saran untuk sesuatu yang bisa diperbaiki.
+3. Jelajahilah forum diskusi ArtiPedia , dan ajukan pertanyaan atau menjawab pertanyaan.
+5. Temukan masalah terbuka (terutama yang diberi labelhelp-wanted ), dan kirimkan perbaikan yang diajukan. 
+6. Bantu evaluasi dan meninjau apa yang diusulkan.
 
-When Tom Preston-Werner met me at GitHub HQ 2.0 in January 2013 to pass on
-the torch, I could never have dreamed of all the amazing experiences this
-community would share with me over the next 5 years. From visiting @qrush
-in Buffalo, NY for a hack night on Jekyll to attending a Jekyll planning
-session hosted by @benbalter at GitHub to Google Summer of Code which gave
-us jekyll-admin, I am eternally grateful to all of you for the opportunity
-to lead this excellent community. I'm confident Olivia will continue to
-lead Jekyll to even greater heights.
+Mengirimkan permintaan tarik via github.com Permalink
+Banyak perubahan kecil bisa dilakukan seluruhnya melalui antarmuka web github.com.
 
-As always, Happy Jekylling!
+1. Klik ikon pensil di sudut kanan atas untuk mengedit artikel/file
+2. Buat perubahan yang Anda usulkan
+3. Klik "Mengusulkan perubahan file"
+4. Klik "Buat permintaan tarik"
+5. Tambahkan judul deskriptif dan deskripsi mendetail untuk perubahan yang Anda usulkan. Lebih banyak informasi lebih baik.
+6. Klik "Buat permintaan tarik"
+7. Anda akan secara otomatis berlangganan untuk menerima pembaruan karena orang lain meninjau perubahan yang Anda ajukan dan memberikan masukan.
 
-Parker
-
-*Curious about who else runs this show? [Check out our excellent team.](/team/)*
+Terima kasih 
+Terima kasih! Jika Anda menemukan hal sulit, beritahu kami agar kami dapat memperbaiki proses atau dokumentasi kami!
