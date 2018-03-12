@@ -4,53 +4,27 @@ permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
-This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such
-as getting your site up and running, creating and managing your content,
-customizing the way your site works and looks, deploying to various
-environments, and give you some advice on participating in the future
-development of Jekyll itself.
+Selamat datang di ArtiPedia, ArtiPedia merupakan suatu proyek terbuka yang mengumpulkan berbagai informasi seperti Pengertian, Definisi, Istilah, Referensi, dll.
 
-## So what is Jekyll, exactly?
+## Kontributor
 
-Jekyll is a simple, blog-aware, static site generator. It takes a template
-directory containing raw text files in various formats, runs it through
-a converter (like [Markdown](https://daringfireball.net/projects/markdown/))
-and our [Liquid](https://shopify.github.io/liquid/) renderer, and
-spits out a complete, ready-to-publish static website suitable
-for serving with your favorite web server. Jekyll also happens to be the engine
-behind [GitHub Pages](https://pages.github.com), which means you can use Jekyll
-to host your project’s page, blog, or website from GitHub’s servers **for
-free**.
+Sebagaimana telah disebutkan di Atas bahwa ArtiPedia merupakan proyek terbuka, maka semua orang orang baik itu mahasiswa, pekerja, siswa, ataupun lainnya dapat berkontribusi di ArtiPedia tentunya dengan memperhatikan kode etik dalam berkontribusi.
 
-## Helpful Hints
+## Tujuan
 
-Throughout this guide there are a number of small-but-handy pieces of
-information that can make using Jekyll easier, more interesting, and less
-hazardous. Here’s what to look out for.
+ArtiPedia bertujuan sebagai sarana bagi kita untuk memuat pemikiran, berbagi informasi, berdiskusi, menjelaskan berbagai pengertian, istilah dll yang dapat berguna bagi semua orang.
 
 <div class="note">
-  <h5>ProTips™ help you get more from Jekyll</h5>
-  <p>These are tips and tricks that will help you be a Jekyll wizard!</p>
+  <h5>Menjadi Kontributor</h5>
+  <p>Menjadi kontributor, berbagi informasi, berdiskusi, dan mengembangkan diri dll.</p>
 </div>
 
 <div class="note info">
-  <h5>Notes are handy pieces of information</h5>
-  <p>These are for the extra tidbits sometimes necessary to understand
-     Jekyll.</p>
+  <h5>Kode Etik</h5>
+  <p>Dalam membagikan informasi hendaknya memperhatikan kode etik agar informasi yang diberikan dapat dipublikasikan serta memberikan manfaat bagi orang lain. </p>
 </div>
 
-<div class="note warning">
-  <h5>Warnings help you not blow things up</h5>
-  <p>Be aware of these messages if you wish to avoid certain death.</p>
-</div>
+## Terima Kasih
 
-<div class="note unreleased">
-  <h5>You'll see this by a feature that hasn't been released</h5>
-  <p>Some pieces of this website are for future versions of Jekyll that
-    are not yet released.</p>
-</div>
+ArtiPedia mengucapkan banyak terima kasih bagi semua telah berkontrubisi di ArtiPedia. Kita berharap semua orang tertarik untuk bergabung, bersama-sama membangun media informasi yang benar-benar bermanfaat dan Anti Hoax.
 
-If you come across anything along the way that we haven’t covered, or if you
-know of a tip you think others would find handy, please [file an
-issue]({{ site.repository }}/issues/new) and we’ll see about
-including it in this guide.
