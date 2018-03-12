@@ -4,7 +4,7 @@ permalink: /docs/kode-etik/
 ---
 
 Kode etik
-Sebagai kontributor dan pengelola proyek ini, dan untuk kepentingan membina komunitas yang terbuka dan ramah, kami berjanji untuk menghormati semua orang yang berkontribusi melalui isu pelaporan, memosting permintaan fitur, memperbarui dokumentasi, mengajukan permintaan atau tambalan, dan kegiatan lainnya.
+Sebagai kontributor dan pengelola proyek ini, serta untuk kepentingan membina komunitas yang terbuka dan ramah, kami berjanji untuk menghormati semua orang yang berkontribusi melalui isu pelaporan, memposting permintaan, memperbarui dokumentasi, mengajukan permintaan atau tambahan, dan kegiatan lainnya.
 
 Kami berkomitmen untuk menjadikan partisipasi dalam proyek ini sebagai pengalaman bebas pelecehan untuk semua orang, terlepas dari tingkat pengalaman, jenis kelamin, identitas dan ekspresi gender, orientasi seksual, kecacatan, penampilan pribadi, ukuran tubuh, ras, etnisitas, usia, agama, atau kebangsaan.
 
