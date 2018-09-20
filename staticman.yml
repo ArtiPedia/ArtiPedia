@@ -1,0 +1,24 @@
+comments:
+  allowedFields: ["name", "email", "url", "messages","replying_to"]
+  allowedOrigins: ["localhost", "artipedia.site"]
+  branch: "master"
+  commitMessage: "Add Staticman data"
+  filename: "entry{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"
+  moderation: true
+  name: "artipedia.site"
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["name", "email", "messages"]
+  transforms:
+    email: md5
+
+reCaptcha:
+  enable: true
+  siteKey: "6LeafVcUAAAAAFQJMObMNm7pHbJE2ApFbeklTT51"
+  secret: "6LeafVcUAAAAAB4ZapmtLZSl7HsDxfAB-NBu7ySf"
+

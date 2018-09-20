@@ -1,0 +1,8 @@
+User-agent: Mediapartners-Google
+Disallow: 
+
+User-agent: *
+Disallow: /page/
+Allow: /
+
+Sitemap: https://artipedia.site/sitemap.xml

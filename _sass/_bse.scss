@@ -1,0 +1,33 @@
+.slide_animate {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 0px;
+    top: 0px;
+    float: left;
+    display: block;
+}
+#books {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.products_box { height:20px; margin-left:20px; text-align:center; }
+.product { float:left; margin-right:20px; margin-top:20px;margin-bottom: 20px; height:215px; position:relative; display:block; }
+.product img { display:block; border:none; }
+
+.product_title { 
+	position: absolute;height:48px;width: 100%;
+    z-index: 999;
+    padding: 3px;
+    text-align: center;
+    color: #ffffff;
+    background: #00b5ad;min-height: 54px;
+    margin-top: -50px;
+    overflow: hidden;    box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.4);}
+.product_title h3 { margin:0; padding:0; font-size:11px; padding:0 2px;line-height: 1.3em;}
+form#search-input {
+    height: 100%;
+}

@@ -1,0 +1,142 @@
+---
+layout: default
+overview: true
+---
+
+{% if page.url == '/' %}
+<section class="intro">
+  <div class="grid">
+    <div class="unit whole center-on-mobiles">
+      <p class="first">Jadilah Kontributor di ArtiPedia, Tuangkan pemikiran anda!</p>
+    </div>
+  </div>
+</section>
+<section class="features">
+  <div class="grid">
+    <div class="unit one-third">
+      <h2>Menjadi Kontributor</h2>
+      <p>
+        Bagaimana cara menulis artikel disini? Bagaimana <em>Menjadi Kontributor</em>.
+      </p>
+      <a href="/docs/kontributor/" title="menjadi kontributor">Menjadi Kontributor &rarr;</a>
+    </div>
+    <div class="unit one-third">
+      <h2>Format Penulisan</h2>
+      <p>Pelajari format penulisan artikel di Artipedia agar memudahkan anda dalam menulis </p><a href="/docs/format-penulisan/">Format Penulisan &rarr;</a>
+    </div>
+    <div class="unit one-third">
+      <h2>Kode Etik</h2>
+      <p>
+        Pelajari hal-hal yang harus diperhatikan oleh anda dalam berkontribusi di ArtiPedia.
+      </p>
+      <a href="/docs/kode-etik/" title="Kode Etik">Baca Selengkapnya &rarr;</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<section class="quickstart">
+  <div class="grid">
+    <div class="unit golden-small center-on-mobiles">
+      <h3>Menulis artikel <em>dengan &nbsp;mudah</em>.</h3>
+    </div>
+    <div class="unit golden-large code">
+      <p class="title">Informasi</p>
+      <div class="shell">
+        <p class="line">
+          <span class="path">1</span>
+      
+          <span class="command">Jadilah kontributor</span>    <span class="prompt">!</span>
+        </p>
+        <p class="line">
+          <span class="path">2</span>
+          
+          <span class="command">Pelajari format penulisan</span><span class="prompt">!</span>
+        </p>
+        <p class="line">
+          <span class="path">3</span>
+                    <span class="command">Mulai membuat artikel</span><span class="prompt">!</span>
+        </p>
+        <p class="line">
+          <span class="path">4</span>
+                   <span class="command">Mulai memperbaiki artikel</span><span class="prompt">!</span>
+        </p>
+        <p class="line">
+          <span class="output">Bermanfaat</span>
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+    
+<h2 class="text-center"><i>Apa yang terbaru?</i></h2>
+
+{% endif %}
+<section class="features">
+  <div class="grid mainbox">
+ 	<div class="card">
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-6t+ed+2i-1n-4w"
+     data-ad-client="ca-pub-1344864982877041"
+     data-ad-slot="6785974866"></ins>
+</div>
+    <div class="card">
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-6t+ed+2i-1n-4w"
+     data-ad-client="ca-pub-1344864982877041"
+     data-ad-slot="6785974866"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+     {% for post in paginator.posts %} 
+     <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://artipedia.site/article"
+  },
+  "headline": "{{ post.title }}",
+  "image": [
+    "https://artipedia.site/img/thumb/{{ post.image }}"
+    ],
+  "datePublished": "{{ post.date }}",
+  "dateModified": "{{ post.date }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ post.author }}"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "ArtiPedia",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://artipedia.site/img/logo-2x.png"
+    }
+  },
+  "description": "{{ post.description | truncate: 160 }}"
+}
+</script>
+       <a class="post-link-index" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+          <div class="card">
+                <span class="image">
+                 <img alt="{{ post.title }}" title="{{ post.title }}" class="post-image-index"  src="/img/thumb/{{ post.image }}" width="300" height="146.25" />
+                <p class="time"><time datetime="{{post.date | date: '%Y-%m-%d'}}">{{post.date | date: "%Y %b %d"}}</time></p>
+                </span>
+            <div class="card-footer">
+                    <h2 class="post-index-title">{{ post.title }}</h2>
+                    <hr>
+                    
+                     <p  class="post-excerpt">{{ post.description | truncate: 120 }}</p>
+               </div>
+        </div> 
+    </a>
+      {% endfor %}   
+</div>{% include pagination.html %}<div class="clear"></div>
+  </div></section>
+
