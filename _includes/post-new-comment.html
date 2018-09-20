@@ -1,0 +1,19 @@
+<form id="post-new-comment" class="form" action="{{ site.staticmanUrl }}" method="post">
+    <input type="hidden" name="options[slug]" value="{{ post_slug }}">
+    <input type="hidden" name="options[parent]" value="{{ post_slug }}">
+    <input type="hidden" name="options[origin]" value="{{ site.url }}{{ page.url }}">
+
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
+    <input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">
+    
+    <input type="text" name="company" class="text-field" style="display: none">
+    <input class="form__field text-field" type="text" name="fields[nama]" placeholder="Nama" required/>
+    <input class="form__field text-field" type="email" name="fields[email]" placeholder="Email Anda" required/>
+    <input class="form__field text-field" type="url" name="fields[website]" placeholder="Website (optional)"/>
+    <input class="form__field text-field" type="address" name="fields[address]" placeholder="Address (do not fill!)" style="display: none"/>
+    <textarea class="form__field text-field" rows="10" name="fields[komentar]" placeholder="Komentar" required></textarea>
+    <input id="form-subscribe" type="checkbox" name="options[subscribe]" value="email" class="checkbox">
+    <label for="form-subscribe" class="form__field checkbox__label">Notifikasi Komentar Terbaru</label>
+    <div class="form__recaptcha g-recaptcha" data-sitekey="6LeafVcUAAAAAFQJMObMNm7pHbJE2ApFbeklTT51"></div>
+    <input class="cta button demo" type="submit" value="Kirim" />
+</form>

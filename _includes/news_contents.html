@@ -1,0 +1,52 @@
+<div class="unit one-fifth hide-on-mobile no-print">
+  <aside><div class="aside"><h3>Ads</h3><div class="aside ads">
+	 {% include ads-sidebar.html %}
+    </div></div><div class="aside w1"><h3>Ikuti Kami</h3>
+	  <ul id="abt"><li data-alt="Follow us on Facebook"><a class="icon facebook" href="https://www.facebook.com/ArtiPedia.id" target="_blank" title="Follow us on Facebook">Follow us on Facebook</a></li><li data-alt="Follow us on Google+"><a class="icon googleplus" href="https://plus.google.com/u/1/114640749826900651383" target="_blank" title="Follow us on Google+">Follow us on Google+</a></li><li data-alt="Follow us on twitter"><a class="icon twitter" href="https://twitter.com/artipedia243" target="_blank" title="Follow us on Twitte">Follow us on Twitter</a></li></ul></div>
+	  <div class="aside w2">
+   <h3><a href="https://artipedia.site/docs/administrasi" title="Kumpulan Administrasi">Administrasi</a></h3>
+    <ul>
+      
+	  {% for post in site.categories.administrasi limit:5 %}
+      <li class="{% if page.title == post.title %}current{% endif %}">
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><span class="postdate"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{{ post.date | date_to_string }}</span>
+      </li>  {% endfor %}</ul>
+	  </div>
+	  <div class="aside w3">
+	  <h3><a href="https://artipedia.site/docs/berita/" title="Kumpulan Berita">Berita</a></h3>
+    <ul>
+    
+	  {% for post in site.categories.berita limit:5 %}
+      <li class="{% if page.title == post.title %}current{% endif %}">
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><span class="postdate"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{{ post.date | date_to_string }}</span>
+      </li>  {% endfor %}</ul></div><div class="aside w4">
+	  
+	  <h3><a href="https://artipedia.site/docs/buku/" title="Kumpulan Buku">Buku</a></h3>
+    <ul>
+     	  {% for post in site.categories.buku limit:5 %}
+      <li class="{% if page.title == post.title %}current{% endif %}">
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><span class="postdate"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{{ post.date | date_to_string }}</span>
+      </li>
+      {% endfor %}
+      
+    </ul></div><div class="aside w5">
+	   <h3><a href="https://artipedia.site/docs/referensi/" title="Kumpulan Referensi">Referensi</a></h3>
+    <ul>
+      {% for post in site.categories.referensi limit:5 %}
+      <li class="{% if page.title == post.title %}current{% endif %}">
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><span class="postdate"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{{ post.date | date_to_string }}</span>
+      </li>  {% endfor %}
+	  </ul></div>
+	  <div class="aside w6">
+        <h3 class="widget-title">Tags</h3>
+        <div class="tagcloud">
+{% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+    {% assign sortedCategories = site_categories | split:',' | sort %}
+            {% for category in sortedCategories %}
+            <span><a class="h3side" href="https://artipedia.site/kategori/#{{ category | cgi_escape }}">{{ category }}</a></span>
+            {% endfor %}<div class="clear"></div>
+        </div><!-- .tagcloud -->
+</div><!-- .widget -->
+	
+  </aside>
+</div>

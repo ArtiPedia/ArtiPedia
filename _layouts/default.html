@@ -1,0 +1,38 @@
+---
+layout: compress
+---
+{% include top.html %}
+<body class="wrap">
+{% include header.html %}
+{{ content }}
+<div class="clear"></div>
+{% include ads_chitika.html %}	
+{% include footer.html %}
+{% include anchor_links.html %}
+{% include ads-270.html %}
+<div id='kotak-dialog'><h5 class='title'>Tunggu hingga dokumen muncul<a class='closed' href='#'>Tutup <i aria-hidden='true' class='fa fa-window-close'></i></a></h5><div class='isi-dialog'><div id='iframeContainer'></div></div></div><div id='dialog-overlay'></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>(function(b){function g(a){return(a=window.localStorage.getItem(a))?JSON.parse(a):a}var e={};b.cachedAjaxPromise=function(a,c){var d=e[a],f;d||(d=new jQuery.Deferred,e[a]=d,(f=g(a))&&d.resolve(f),c||(c={}),b.extend(c,{error:function(a,c,b){console.log("User info request failed: "+b);d.resolve(null)},success:function(b){var c=JSON.stringify(b);window.localStorage.setItem(a,c);d.resolve(b)}}),b.ajax(a,c));return d.promise()}})(jQuery);</script>
+<script src="/js/main.js" async></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script async>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#56cbdb",
+      "text": "#ffffff"
+  },
+  "theme": "edgeless",
+  "position": "top",
+    "content": {
+    "link": "Cookie Policy",
+    "href": "https://artipedia.site/privacy-cookie-policy"
+  }
+  }})});</script>
+</body>
+</html>

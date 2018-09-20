@@ -1,0 +1,25 @@
+{% capture post_slug %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}{% endcapture %}
+
+<section class="comments recent no-print">
+	<div class="constrain--body">
+		<div class="comments__existing js-comments" {% if site.data.comments[post_slug] == null %}aria-hidden="true"{% endif %}>
+			<h4 class="comments__heading heading-2"><i class="fa fa-comments-o" aria-hidden="true"></i> Comments</h4>
+
+			{% if site.data.comments[post_slug] %}
+				{% assign comments = site.data.comments[post_slug] | sort %}
+				
+				{% for comment in comments %}
+					{% assign email = comment[1].email %}
+					{% assign nama = comment[1].nama %}
+					{% assign website = comment[1].website %}
+					{% assign date = comment[1].date %}
+					{% assign komentar = comment[1].komentar %}
+
+					{% include post-comment.html index=forloop.index email=email nama=nama website=website date=date komentar=komentar %}
+				{% endfor %}
+			{% endif %}
+		</div>
+
+		{% include post-new-comment.html %}
+	</div>
+</section>

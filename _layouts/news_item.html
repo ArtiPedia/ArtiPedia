@@ -1,0 +1,59 @@
+---
+layout: news
+---
+
+<article>
+   <h2>
+    {{ page.title }}
+    <a href="{{ page.url }}" class="header-link" title="Permalink">
+      <span class="sr-only">Permalink</span>
+      <i class="fa fa-link"></i>
+    </a>
+  </h2>
+  <span class="post-category no-print">
+    <span class="label">
+      {{ page.categories | array_to_sentence_string }}
+    </span>
+  </span>
+  <div class="post-meta">
+        <!-- Reading time -->
+        <span class="read-time" title="Estimated read time">
+         &nbsp; <i class="fa fa-clock-o" aria-hidden="true"></i>      
+          <span itemprop="timeRequired">
+          {% assign words = content | number_of_words %}
+          {% if words < 360 %}
+            1 min read
+          {% else %}
+            {{ words | divided_by:180 }} Mins read
+          {% endif %}
+          </span>
+        </span>
+    <span class="post-date">
+      <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;{{ page.date | date_to_string }}
+    </span>
+    <a href="https://github.com/{{ page.author }}" class="post-author">
+      {% avatar {{ page.author}} size=24 %}
+      {{ page.author }}
+    </a>     
+           </div><div class="clear"></div>
+      {% include ads-text.html %}
+  <div class="desc">
+  <img itemprop="image" class="post-image" src="/img/{{page.image}}" alt="{{page.title}}" title="{{page.title}}">
+  <small itemprop="description" class="intros">{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description | strip_html}}{% endif %}</small>
+  </div>
+ <div class="post-content">
+ {{ content }}
+ {% include ads-content.html %}
+ {% include tags.html %}
+ {% include edits.html %}
+ </div> 
+
+</article>
+<div class="article-footer">
+{% include social-buttons.html %}
+{% include recent.html %}
+{% include section_nav_post.html %}
+ {% if page.comments == true %}
+    {% include page__comments.html %}
+  {% endif %}
+</div>

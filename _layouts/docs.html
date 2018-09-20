@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+  <section class="docs">
+    <div class="grid">
+
+      {% include docs_contents_mobile.html %}
+
+      <div class="unit four-fifths">
+        <article>
+         <h2>{{ page.title }}</h2>
+          <div class="post-meta">
+        <!-- Reading time -->
+        <span class="read-time" title="Estimated read time">
+         &nbsp; <i class="fa fa-clock-o" aria-hidden="true"></i>      
+          <span itemprop="timeRequired">
+          {% assign words = content | number_of_words %}
+          {% if words < 360 %}
+            1 min read
+          {% else %}
+            {{ words | divided_by:180 }} Mins read
+          {% endif %}
+          </span>
+        </span>
+     <a href="https://github.com/{{ page.author }}" class="post-author">
+      {% avatar {{ page.author}} size=24 %}
+      {{ page.author }}
+    </a>     
+  </div>
+            <div class="improve right hide-on-mobiles no-print">
+            <a rel="nofollow" href="https://github.com/ArtiPedia/ArtiPedia/edit/master/{{ page.path }}"><i class="fa fa-pencil"></i> &nbsp;Edit halaman ini</a>
+          </div><div class="clear"></div>
+            {% include ads-text.html %}
+          {{ content }}
+           {% include ads-content.html %}
+          {% include section_nav.html %}
+        </article>
+      </div>
+
+      {% include docs_contents.html %}
+
+      <div class="clear"></div>
+
+    </div>
+  </section>

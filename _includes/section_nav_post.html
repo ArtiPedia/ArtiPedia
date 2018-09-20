@@ -1,0 +1,27 @@
+{% comment %}
+Map grabs the doc sections, giving us an array of arrays. Join, flattens all
+the items to a comma delimited string. Split turns it into an array again.
+{% endcomment %}
+{% assign posts = site.data.posts | map: 'posts' | join: ',' | split: ',' %}
+
+{% comment %}
+Because this is built for every page, lets find where we are in the ordered
+document list by comparing url strings. Then if there's something previous or
+next, lets build a link to it.
+{% endcomment %}
+
+
+
+    <div class="section-nav no-print">
+      <div class="left align-right">
+          {% if page.previous.url %}
+            <a href="{{page.previous.url}}" class="prev">Sebelumnya</a>
+          {% endif %}
+      </div>
+      <div class="right align-left">
+            {% if page.next.url %}
+          <a href="{{page.next.url}}" class="next">Selanjutnya</a>
+          {% endif %}
+      </div>
+    </div>
+    <div class="clear"></div>

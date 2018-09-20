@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="generator" content="Jekyll 3.0">
+    <title>{%if page.title %}{{ page.title }} | ArtiPedia {% else %}{{ site.name }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+    <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+    <!-- Open Graph -->
+    <meta property="fb:app_id" content="2023057631120381">
+    <meta property="og:locale" content="id">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:site_name" content="ArtiPedia">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {% if page.layout == 'news_item' %}
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{site.url}}/img/{{ page.image }}" >
+    <meta property="og:image:alt" content="{{page.title}}" >
+    <meta property="article:publisher" content="http://www.facebook.com/ArtiPedia-506100143118338/" >
+    <meta property="article:author" content="https://www.facebook.com/you.w4hyou" >
+    <meta property="article:published_time" content="{{ page.date }}" >
+    {% else %}
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{site.url}}/img/twitter-card.png">
+    <meta property="og:image:alt" content="{{site.name}}">
+    {% endif %}
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.desc %}{{ page.desc }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:site" content="@artipedia243">
+    <meta name="twitter:creator" content="@you_wahyou">
+    <meta name="twitter:card" content="summary">
+    {% feed_meta %}
+    <meta name="coinzilla" content="coinzilla-420745b92a3f3cd4d0" />
+    <meta content="3kj3zUqTMQb4K-G7zoCj1aLHtho" name="alexaVerifyID">
+    <meta name="google-site-verification" content="C1hGxjtzZwOcieGwAnCwFYFX2eSEVxz_JWWiytICEEc" />
+    <meta name="msvalidate.01" content="45256F6C01A5B0893737B4B675E797AE" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="/css/screen.css" rel="stylesheet" media="screen">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/screen.css"></noscript>
+    <script type="text/javascript">
+    {% include loadCss.js %}
+    </script>
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//accounts.google.com">
+    <link rel="dns-prefetch" href="//ssl.gstatic.com">
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="//googleads.g.doubleclick.net/">
+    <link rel="dns-prefetch" href="//tpc.googlesyndication.com">
+    <link rel="dns-prefetch" href="//stats.g.doubleclick.net/">
+    <link rel="dns-prefetch" href="//static.doubleclick.net">
+    <link rel="dns-prefetch" href="//cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="//securepubads.g.doubleclick.net">
+    <link rel="dns-prefetch" href="//adservice.google.com">
+    <link rel="dns-prefetch" href="//www.gstatic.com/">
+    {% if page.layout == 'news_item' %}
+    <link rel="dns-prefetch" href="//artipedia.disqus.com/">
+    <link rel="dns-prefetch" href="//disqus.com">
+    <link rel="dns-prefetch" href="//c.disquscdn.com">
+    <link rel="dns-prefetch" href="//a.disquscdn.com">
+    <link rel="dns-prefetch" href="//realtime.services.disqus.com">
+    {% endif %}
+    <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+    {% feed_meta %}
+	<link href="https://artipedia.site/sitemap.xml" rel="alternate" title="ArtiPedia" type="application/sitemap+xml">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="publisher" href="https://plus.google.com/114640749826900651383">
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "{% if page.layout == 'news_item' %}Article{% else %}WebSite{% endif %}",
+    "headline": "{%if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}",
+    "name": "{%if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "id": "{{ site.url }}{{ page.url }}"
+    },
+    "image": {
+        "@type": "ImageObject",
+       "url": " {%if page.image %}{{ site.url }}/img/{{ page.image }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}",
+		"width": 728,
+        "height": 546
+    },
+    "author": {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "ArtiPedia",
+        "url": "https://artipedia.site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://artipedia.site/img/logo-2x.png",
+            "width": 326,
+            "height": 60
+        },
+        "sameAs": [
+    "https://twitter.com/artipedia243",
+    "https://plus.google.com/114640749826900651383",
+    "https://www.facebook.com/artipedia.site"
+        ]
+    },
+    {% if page.layout == 'news_item' %}
+    "datePublished": "{{ page.date | date: "%Y-%m-%d" }}",
+    "dateModified": "{{ page.date | date: "%Y-%m-%d" }}", {% endif %}
+    "publisher": {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "ArtiPedia",
+        "url": "https://artipedia.site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://artipedia.site/img/logo-2x.png",
+            "width": 326,
+            "height": 60
+        },
+        "sameAs": [
+   "https://twitter.com/artipedia243",
+   "https://plus.google.com/114640749826900651383",
+   "https://www.facebook.com/artipedia.id"
+        ]
+    },
+    "description": "{% if page.description %}{{ page.description}}{% else %}{{ site.description}}{% endif %}"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://artipedia.site/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://artipedia.site/search?cari={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+  <link href='{{ site.url }}{{ page.url }}' hreflang='x-default' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-ID' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-US' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-IN' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-PK' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-GB' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-FR' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-DE' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-CA' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-ES' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-DK' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-IT' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-NL' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-AT' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-CH' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-NZ' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-IE' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-JP' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-SG' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='id-MY' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-ID' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-US' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-IN' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-PK' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-GB' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-FR' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-DE' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-CA' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-ES' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-DK' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-IT' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-NL' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-AT' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-CH' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-NZ' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-IE' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-JP' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-SG' rel='alternate'><link href='{{ site.url }}{{ page.url }}' hreflang='en-MY' rel='alternate'>
+  <!--[if lt IE 9]>
+  <script src="/js/html5shiv.min.js"></script>
+  <script src="/js/respond.min.js"></script>
+  <![endif]-->
+{% include analytics.html %}
+</head>

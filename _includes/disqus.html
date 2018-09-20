@@ -1,0 +1,23 @@
+<a href="https://artipedia.site{{ page.url }}/#disqus_thread" id="disqus-button" onclick="event.preventDefault();show_disqus()" class="btn"><span>Comments </span></a>
+<div id='disqus_thread'></div>
+<script>
+ var disqus_config = function() {
+    this.page.url = 'https://artipedia.site{{ page.url }}';
+    this.page.identifier = '{{ page.url }}';
+  };
+  (function() {
+    var d = document,
+      s = d.createElement('script');
+    s.src = 'https://artipedia.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+
+</script><noscript>Please enable JavaScript to view the Disqus comments</noscript>
+<script>
+  function show_disqus() {
+    document.getElementById('disqus_thread').style.display = "block";
+    document.getElementById('disqus-button').style.display = "none";
+  }
+
+</script>

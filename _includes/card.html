@@ -1,0 +1,21 @@
+<div class="ui card">
+    <div class="content">
+        
+        <div class="meta"><a href="{{ post.url | prepend: site.baseurl }}">
+            <img alt="{{ post.title }}" title="{{ post.title }}" class="post-image-index"  src="/img/{{ post.image }}"  /></a>
+
+        </div>
+       <div class="extra content">
+               <div class="floated author">
+             <a class="header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html | truncatewords: 15 }}</a>
+        
+        </div></div>
+        <div class="description">
+            {{ post.content | strip_html | truncate: 100  }}
+        </div>
+    
+    
+
+    </div>
+</div>
+

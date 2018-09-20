@@ -1,0 +1,92 @@
+<section class="page__reactions recent no-print">
+  {% if site.repository and site.staticman.branch %}
+    {% if site.data.comments[page.slug] %}
+      <!-- Start static comments -->
+      <div id="comments" class="js-comments">
+        <h4 class="page__section-label"> <i class="fa fa-comments-o" aria-hidden="true"></i>
+          {% if site.data.comments[page.slug].size > 1 %}
+            {{ site.data.comments[page.slug] | size }}
+          {% endif %}
+          Comments
+        </h4>
+        {% assign comments = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1].replying_to == blank' %}
+        {% for comment in comments %}
+          {% assign index       = forloop.index %}
+          {% assign replying_to = comment[1].replying_to | to_integer %}
+          {% assign avatar      = comment[1].avatar %}
+          {% assign email       = comment[1].email %}
+          {% assign name        = comment[1].name %}
+          {% assign url         = comment[1].url %}
+          {% assign date        = comment[1].date %}
+          {% assign messages     = comment[1].messages %}
+          {% include comment.html index=index replying_to=replying_to avatar=avatar email=email name=name url=url date=date messages=messages %}
+        {% endfor %}
+      </div>
+      <!-- End static comments -->
+    {% endif %}
+
+    {% unless page.comments_locked == true %}
+      <!-- Start new comment form -->
+      <div id="respond">
+        <h4 class="page__section-label"><i class="fa fa-commenting-o" aria-hidden="true"></i> Tinggalkan Komentar <small><a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | absolute_url }}#respond" style="display:none;">Batal</a></small></h4>
+        <form id="comment-form" class="page__form js-form form" method="post" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+          <fieldset>
+               <div class="input-group form-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input class="form-control" id="name" name="fields[name]" placeholder="Nama Anda *" type="text" minlength="2" required>
+                </div>
+                <div class="input-group form-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input class="form-control" id="email" name="fields[email]" placeholder="Email *" type="email" required>
+                </div>
+                <div class="input-group form-group">
+                    <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                    <input class="form-control" id="url" name="fields[url]" placeholder="website (Bila ada)" type="url">
+                </div>
+                <div class="input-group form-group">
+                    <span class="input-group-addon" style="vertical-align:top;"><i class="fa fa-pencil"></i></span>
+                    <textarea class="form-control" id="message" name="fields[messages]" placeholder="Komentar Anda *" rows="5" required spellcheck="true"></textarea>
+                </div>
+                <div class="form-group">
+                    <input id="comment-form-reply" name="options[subscribe]" value="email" type="checkbox">
+                   <small class="smalln"> Notifikasi</small>
+                </div>
+                <div class="hidden">
+                    <input name="options[redirect]" type="hidden" value="https://artipedia.site/komentar-terkirim.html">
+                    <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+                    <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
+                    <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
+                    <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+                    <label for="comment-form-location">Leave blank if you are a human</label>
+                    <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off">
+                </div>
+                <div class="form-group">
+                  <script async src="https://www.google.com/recaptcha/api.js"></script>
+                  <div class="g-recaptcha" data-sitekey="6LeafVcUAAAAAFQJMObMNm7pHbJE2ApFbeklTT51"></div>
+                </div>
+                <div class="form-group small-screen-center">
+                    <a class="btn btn-primary" rel="nofollow" id="cancel-comment-reply-btn" href="{{ page.url | absolute_url }}#respond" style="display:none;" >
+                        Cancel reply
+                    </a>
+                    <button class="btn btn-primary" type="submit">
+                        <i class="fa fa-comment"></i> Kirim Komentar
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+        <div id="messages"></div>     
+    </div>
+    {% else %}
+    <div class="comments-form post-showinfo">
+        <div class="comments-head small-screen-center">
+            <h3><span><i class="fa fa-comments"></i></span>
+                Comments are closed
+            </h3>
+            <small>
+                If you have a question concerning the content of this page, please feel free to <a href="{{ site.url }}/contact/">contact me</a>.
+            </small>
+        </div>
+    </div>
+    {% endunless %}
+  {% endif %}
+</section>

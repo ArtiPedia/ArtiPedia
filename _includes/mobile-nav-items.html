@@ -1,0 +1,17 @@
+<ul>
+  <li class="{% if page.overview %}current{% endif %}">
+    <a href="/" title="Halaman Utama">Home</a>
+  </li>
+  <li class="{% if page.url contains '/docs/' %}current{% endif %}">
+    <a href="/docs/sambutan/" title="Sambutan">Panduan</a>
+  </li>
+  <li class="{% if page.author %}current{% endif %}">
+    <a title="Wiki Terbaru" href="/wiki/">Wiki</a>
+  </li>
+  <li class="{% if page.url contains '/wiki/' %}current{% endif %}">
+    <a title="Buku" href="https://buku.artipedia.site/">Buku</a>
+  </li>
+  <li>
+    <a href="https://blog.artipedia.site" title="Blog" id="Blog">Blog</a>
+  </li>
+</ul>

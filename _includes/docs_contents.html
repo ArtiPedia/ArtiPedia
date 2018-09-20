@@ -1,0 +1,23 @@
+<div class="unit one-fifth hide-on-mobiles no-print">
+	<aside><div class="aside w">
+    {% for section in site.data.docs %}
+    <h3>{{ section.title }}</h3>
+    {% include docs_ul.html items=section.docs %}
+    {% endfor %}</div><div class="aside"><h3>Ads</h3><div class="aside ads">
+	{% include ads-sidebar.html %}
+    </div></div><div class="aside w1"><h3>Ikuti Kami</h3>
+	  <ul id="abt"><li data-alt="Follow us on Facebook"><a class="icon facebook" href="https://www.facebook.com/ArtiPedia.id" target="_blank" title="Follow us on Facebook">Follow us on Facebook</a></li><li data-alt="Follow us on Google+"><a class="icon googleplus" href="https://plus.google.com/u/1/114640749826900651383" target="_blank" title="Follow us on Google+">Follow us on Google+</a></li><li data-alt="Follow us on twitter"><a class="icon twitter" href="https://twitter.com/artipedia243" target="_blank" title="Follow us on Twitte">Follow us on Twitter</a></li></ul></div>
+		<div class="aside w">
+    <h3>Terbaru</h3>
+    <ul>
+        {% for post in site.posts limit:10 %}
+                <li class="{% if page.title == post.title %}current{% endif %}">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+     
+        {% endfor %}
+    </ul>
+    </div>
+	
+  </aside>
+</div>

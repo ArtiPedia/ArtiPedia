@@ -1,0 +1,65 @@
+name: ArtiPedia - Pengertian, Definisi, Istilah dan Referensi
+description: ArtiPedia merupakan website terbuka yang mengumpulkan berbagai informasi seperti Pengertian, Definisi, Istilah, Referensi, Tutorial, Buku, RPP, dan Informasi lainnya.
+url: https://artipedia.site
+repository: "ArtiPedia/ArtiPedia"
+timezone: Asia/Jakarta
+twitter:
+  username: artipedia243
+logo: "/img/logo-2x.png"
+image: {{page.image}}
+google_analytics_id: UA-115101359-3
+google_site_verification: C1hGxjtzZwOcieGwAnCwFYFX2eSEVxz_JWWiytICEEc
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+  posts:
+    permalink: "/wiki/:title.html"
+    output: true
+  tutorials:
+    output: true
+defaults:
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: news_item
+    image: "twitter-card.png"
+plugins:
+- jekyll-avatar
+- jekyll-feed
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-seo-tag
+- jekyll-sitemap
+- jemoji
+- jekyll-paginate
+sass:
+  style: compressed
+exclude:
+- ".gitignore"
+- CNAME
+- icomoon-selection.json
+- readme.md
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+paginate: 16
+paginate_path: /page/:num/
+staticmanUrl: https://api.staticman.net/v2/entry/ArtiPedia/ArtiPedia/master/comments
+staticman:
+  branch: "master"
+include: ['.htaccess']
+
+
+

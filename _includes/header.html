@@ -1,0 +1,30 @@
+<div class="you_wrap-outer" id="you-wrap-outer">
+<header class="no-print">
+  <div class="flexbox">
+    <div class="center-on-mobiles">
+      <h1>
+        <a href="/" class="logo">
+          <span class="sr-only">{%if page.title %}{{ page.title }} | ArtiPedia{% else %}{{ site.name }}{% endif %}</span>
+          <img src="/img/logo-2x.png" width="261.94" height="65" alt="ArtiPedia Logo">
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav hide-on-mobiles">
+      {% include primary-nav-items.html %}
+    </nav>
+       <div class="search hide-on-mobiles">
+      {% include search/input.html %}
+      </div>
+    <div class="meta hide-on-mobiles">
+      <ul>
+        <li>
+          <a href="/docs/daftar-isi/">Daftar Isi</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="mobile-nav show-on-mobiles">
+    {% include mobile-nav-items.html %}
+  </nav>
+ </header>
+  {% include ads-header.html %}
